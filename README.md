@@ -1589,7 +1589,7 @@ save_predictions(vc,"voting_classifier.csv")
     'saved'
 
 
-
+### stacking my models to output better performance
 
 ```python
 test=pd.read_csv("test.csv")
