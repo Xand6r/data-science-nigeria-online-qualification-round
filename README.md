@@ -810,69 +810,7 @@ full_dataset.groupby("Past_Disciplinary_Action")['Promoted_or_Not'].mean().plot(
 
 
 ```python
-# manually curated mapping for categorical variables, these values were derived from my intuition and domain knowledge
-qualification_to_number={'First Degree or HND':2, 'MSc, MBA and PhD':3, 'Non-University Education':1}
-genderMap={"Male":1.1,"Female":3.5}
-yesnoMap={"Yes":1,"No":0}
-noyesMap={"Yes":0,"No":1}
-states_to_tribe={
-    'ABIA': "IGBO",
-    'ADAMAWA':"HAUSA",
-    'AKWA IBOM':"IGBO",
-    'ANAMBRA':"IGBO",
-    'BAUCHI':"IGBO",
-    'BAYELSA':"IGBO",
-    'BENUE':"HAUSA",
-    'BORNO':"HAUSA",
-    'CROSS RIVER':"IGBO",
-    'DELTA':"IGBO",
-    'EBONYI':"IGBO",
-    'EDO':"IGBO",
-    'EKITI':"YORUBA",
-    'ENUGU':"IGBO",
-    'FCT':"HAUSA",
-    'GOMBE':"HAUSA",
-    'IMO':"IGBO",
-    'JIGAWA':"HAUSA",
-    'KADUNA':"HAUSA",
-    'KANO':'HAUSA',
-    'KATSINA':"HAUSA",
-    'KEBBI':"HAUSA",
-    'KOGI':"HAUSA",
-    'KWARA':"HAUSA",
-    "LAGOS":"YORUBA",
-    'NASSARAWA':"HAUSA",
-    'NIGER':"HAUSA",
-     'OGUN':"YORUBA",
-     'ONDO':"YORUBA",
-     'OSUN':"YORUBA",
-     'OYO':"YORUBA",
-     'PLATEAU':"HAUSA",
-     'RIVERS':"IGBO",
-     'SOKOTO':"HAUSA",
-     'TARABA':"HAUSA",
-     'YOBE':"HAUSA",
-     'ZAMFARA':"HAUSA"
-    }
-    
-dept_to_number={
-    "Commercial Sales and Marketing":50.0,
-    "Customer Support and Field Operations":31.4,
-    "Business Finance Operations":30.7,
-    "People/HR Management":30.4,
-    "Sourcing and Purchasing":19.5,
-    "Regulatory and Legal services":18.0,
-    "Information Technology and Solution Support":7.3,
-    "Information and Strategy":5.1,
-    "Research and Innovation":4.3
-}
-maritalMap={"Married":1,"Single":0.5}
 
-def map_employers(x):
-    try: 
-        return int(x)
-    except:
-        return 5
 ```
 
 
